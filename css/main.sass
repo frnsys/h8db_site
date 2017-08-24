@@ -1,0 +1,51 @@
+@import reset
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$primaryFont: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+$background: #f9ebed
+
+*
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  font-family: $primaryFont
+  background: $background
+  padding: 2em
+
+body
+  max-width: 1000px
+  margin: 0 auto
+
+h1
+  font-size: 1.4em
+
+h2
+  font-size: 1.2em
+
+section
+  margin: 1em 0
+
+.search-input
+  width: 100%
+  border: 1px solid #222
+  padding: 0.5em
+  font-size: 1.2em
+  margin: 1em 0
+  font-family: $primaryFont
+
+.kinds
+  display: flex
+  justify-content: space-between
+  margin: 0 0 2em 0
+  li
+    cursor: pointer
+    background: #222
+    color: #fff
+    text-align: center
+    margin: 0 0.2em
+    padding: 0.2em 0.4em
+    &:hover
+      background: none
+      color: #222
