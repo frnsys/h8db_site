@@ -88,7 +88,7 @@ class App extends Component {
                 ref={(input) => { this.searchInput = input; }}
                 onKeyUp={(ev) => this.search(ev.target.value)}/>
         <ul className="kinds">
-          {this.state.kinds.map((kind, i) => <li key={i} onClick={(ev) => this.filter(kind)}>{kind}</li>)}
+          {this.state.kinds.map((kind, i) => <li key={i} onClick={(ev) => this.filter(kind)}><span>{kind}</span></li>)}
         </ul>
         <div className="results">
           {this.state.results.map((term, i) => <Term key={i} {...term} />)}
